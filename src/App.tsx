@@ -53,8 +53,9 @@ const App: React.FC = () => {
       <ul>
         {tasks.map((task) => (
           <li key={task.id} className={task.completed ? "completed" : ""}>
-            <span onClick={() => toggleTask(task.id)}>{task.text}</span>
-            <button onClick={() => deleteTask(task.id)}>❌</button>
+            <span>{task.text}</span>
+            <button onClick={() => toggleTask(task.id)}><span>✅</span></button>
+            <button onClick={() => deleteTask(task.id)}><span>❌</span></button>
           </li>
         ))}
       </ul>

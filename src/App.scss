@@ -51,8 +51,14 @@ ul {
 
     &.completed {
       span {
-        text-decoration: line-through;
-        color: $text-muted;
+      text-decoration: line-through;
+      color: $text-muted;
+      }
+
+      button {
+        span {
+          text-decoration: none;
+        }
       }
     }
 
