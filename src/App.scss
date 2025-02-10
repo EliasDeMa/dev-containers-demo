@@ -49,6 +49,13 @@ ul {
     border-radius: 4px;
     cursor: pointer;
 
+    span {
+      flex-grow: 1;
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
+
     &.completed {
       span {
       text-decoration: line-through;
